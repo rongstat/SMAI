@@ -1,0 +1,8 @@
+exportPattern("^[[:alpha:]]+")
+
+import(Rfast)
+import(RSpectra)
+import(ScreeNOT)
+import(clusterSim)
+import(fpc)
+import(cluster)
