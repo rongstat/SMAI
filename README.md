@@ -21,7 +21,7 @@ The meta-visualization package requires only a standard computer with enough RAM
 RAM: 16+ GB
 CPU: 4+ cores, 3.3+ GHz/core
 
-The R implementation of the method is tested under R version 4.1.1, and require the R packages: `Rfast`,`RSpectra`,`ScreeNOT`,`clusterSim`,`fpc`,`cluster`,`Seurat`,`uwot`,`fossil`,`batchelor`.
+The R implementation of the method is tested under R version 4.1.1, and require the R packages: `Rfast`,`RSpectra`,`ScreeNOT`,`clusterSim`,`fpc`,`cluster`,`Seurat`,`uwot`,`fossil`,`batchelor`,`SMAI`.
 
 
 # Get Started
