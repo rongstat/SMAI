@@ -16,6 +16,7 @@ library(batchelor)
 library(harmony)
 library(rliger)
 library(reticulate)
+library(SMAI)
 ########################################
 ######### load data and preprocessing
 ########################################

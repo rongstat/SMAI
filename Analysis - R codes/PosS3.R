@@ -13,6 +13,7 @@ library(batchelor)
 library(harmony)
 library(rliger)
 library(reticulate)
+library(SMAI)
 reticulate::use_python("/Users/rongma/opt/miniconda3/envs/scanorama/bin/python")
 scanorama <- import('scanorama')
 
