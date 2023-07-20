@@ -10,7 +10,7 @@ The method is based on the paper:
 
 The directory `Data` contains several example datasets for demonstrating our methods.
 
-The directory `R Codes` includes R scripts for analyzing the example datasets, and for reproducing the numerical results in the manuscript.
+The directory `Analysis - R Codes` includes R scripts for analyzing the example datasets, and for reproducing the numerical results in the manuscript.
 
 The directory `Python Code` includes Python implementation of the method.
 
