@@ -4,13 +4,13 @@
 
 The method is based on the paper:
 
-**Ma, R., Sun, E., Donoho, D., and Zou, J. (2023) Is the data alignable? Principled and interpretable alignability testing and integration of single-cell data.**
+Ma, R., Sun, E., Donoho, D., and Zou, J. (2023) *Is the data alignable? Principled and interpretable alignability testing and integration of single-cell data.*
 
 # Content
 
 The directory `Data` contains several example datasets for demonstrating our methods.
 
-The directory `R Codes` includes R scripts for analyzing the example datasets, and for reproducing the numerical results in the manuscript.
+The directory `Analysis - R Codes` includes R scripts for analyzing the example datasets, and for reproducing the numerical results in the manuscript.
 
 The directory `Python Code` includes Python implementation of the method.
 
@@ -35,7 +35,7 @@ To install the R package 'SMAI', simply type the following codes in R:
 
 `install_github("rongstat/SMAI")`
 
-For a **quick guide to meta-visualization in R**, please check out ...
+For a **quick guide to meta-visualization in R**, please check out https://rongstat.github.io/SMAI_guide/.
 
 For further questions and inquiries, please contact Rong Ma (rongm@stanford.edu).
 

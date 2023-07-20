@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Rong Ma
 Maintainer: Rong Ma <rongm@stanford.edu>
 Description: 
-    Use four spaces when indenting paragraphs within the Description.
+    A spectral manifold alignment and inference (SMAI) framework, which enables principled and interpretable alignability testing and structure-preserving integration of single-cell data.
 License: MIT license
 Encoding: UTF-8
 LazyData: true
