@@ -1,9 +1,10 @@
-# SMAI
-Alignability testing and integration of single-cell data
+# SMAI: Spectral Manifold Alignment and Inference for Alignability Testing and Single-Cell Data Integration
+ 
+ Single-cell data integration can provide a comprehensive molecular view of cells, and many algorithms have been developed to remove unwanted technical or biological variations and integrate heterogeneous single-cell datasets. Despite their popularity and broad impact, the existing methods also suffer from several fundamental limitations, such as the absence of a  rigorous test for the alignability of noisy high-dimensional datasets, the serious distortions introduced during alignment, and the lack of interpretability. To overcome these limitations, we present a spectral manifold alignment and inference (SMAI) framework, which enables principled and interpretable alignability testing and structure-preserving integration of single-cell data. Our method is justified by high-dimensional statistical theory, and evaluated using simulations and a diverse range of real-world benchmark datasets. Moreover, SMAI improves various downstream analyses such as the identification of differentially expressed genes and the prediction of single-cell spatial transcriptomics, which reveals novel biological insights. SMAI’s interpretability also enables quantification and a deeper understanding of the sources of batch effects in single-cell data.
 
 The method is based on the paper:
 
-Ma, R., Sun, E., Donoho, D., and Zou, J. (2023) Is the data alignable? Principled and interpretable alignability testing and integration of single-cell data.
+**Ma, R., Sun, E., Donoho, D., and Zou, J. (2023) Is the data alignable? Principled and interpretable alignability testing and integration of single-cell data.**
 
 # Content
 
