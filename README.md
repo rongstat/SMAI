@@ -35,7 +35,7 @@ To install the R package 'SMAI', simply type the following codes in R:
 
 `install_github("rongstat/SMAI")`
 
-For a **quick guide to meta-visualization in R**, please check out https://rongstat.github.io/SMAI_guide/.
+For a **quick guide to meta-visualization in R**, please check out https://rongstat.github.io/SMAI_guide/SMAI-tutorial.html.
 
 For further questions and inquiries, please contact Rong Ma (rongm@stanford.edu).
 
