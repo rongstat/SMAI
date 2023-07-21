@@ -48,7 +48,9 @@ align<-function(data1, data2, sel1=NULL, sel2=NULL, r.max=200, t=5, test=TRUE, d
     data1.d = Tcrossprod(mat.mult(svd.data1$u[,1:r1],diag(svd.data1$d[1:r1])), svd.data1$v[,1:r1])
     data2.d = Tcrossprod(mat.mult(svd.data2$u[,1:r2],diag(svd.data2$d[1:r2])), svd.data2$v[,1:r2])
     r0 = min(c(r1,r2))
-  }else{
+  }
+  
+  if(denoise == "none"){
     data1.d = data1
     data2.d = data2
     r0 = r.max
