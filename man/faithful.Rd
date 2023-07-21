@@ -15,5 +15,5 @@ faithful(data.registered, data)
 Kendall's tau ("kendall"), Spearman's rho ("spearman"), and Pearson ("pearson").
 }
 \description{
-This function include a few
+This function include a few metrics for evaluating structure preservation after integration.
 }

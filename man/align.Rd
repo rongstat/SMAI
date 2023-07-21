@@ -67,5 +67,5 @@ beta: scaling factor;
 p.value: p-value from alignability testing.
 }
 \description{
-This function simultaneously
+This function enables principled and interpretable alignability testing and structure-preserving integration of single-cell data.
 }
