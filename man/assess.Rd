@@ -2,7 +2,7 @@
 % Please edit documentation in R/SMAI-fun2.R
 \name{assess}
 \alias{assess}
-\title{Batch evaluation metrics}
+\title{Batch correction evaluation metrics}
 \usage{
 assess(data, meta_data, straggler = NULL, cutoff = 1.05)
 }
@@ -19,5 +19,5 @@ assess(data, meta_data, straggler = NULL, cutoff = 1.05)
 sihouette.batch: 1 - mean sihouette index; ch.batch: inverse CH index; db.batch: DB index.
 }
 \description{
-This function include a few metrics for evaluating batch effect removal.
+This function include a few metrics for evaluating the batch effect removal.
 }

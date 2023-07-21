@@ -31,7 +31,7 @@ align(
 
 \item{sel2}{index set to select a subset of data2 for SMAI-align}
 
-\item{r.max}{intetger (default 50); the maximum number of singular values selected for desnoising and SMAI-alignment.}
+\item{r.max}{intetger (default 200); the maximum number of singular values selected for desnoising and SMAI-alignment.}
 
 \item{t}{integer (default 5); maximum number of iterations for SMAI-align.}
 
@@ -43,13 +43,13 @@ align(
 
 \item{outlier.cut}{integer (default 20); the number of outliers to be removed from the reference data at each iteration.}
 
-\item{knn}{integer (default 50); the number of nearest neighbors to be sampled from to do SMAI-test. A smaller value leads to more stringent selection of the test set.}
+\item{knn}{integer (default 30); the number of nearest neighbors to be sampled from to do SMAI-test. A smaller value leads to more stringent selection of the test set.}
 
-\item{prop.align}{numeric between 0 and 1 (default 0.5; and must not exceed 0.5 if test=TRUE, to ensure); proportion of samples used for SMAI-alignment. Smaller value improves speed with a possible cost of precision.}
+\item{prop.align}{numeric between 0 and 1 (default 0.3; and must not exceed 0.5 if test=TRUE, to ensure); proportion of samples used for SMAI-alignment. Smaller value improves speed with a possible cost of precision.}
 
 \item{prop.inf}{numeric between 0 and 1-prop.align (default 0.5); proportion of samples used for SMAI-test. Smaller value improves speed with a possible cost of precision.}
 
-\item{cutoff}{numeric larger than 1 (default 1.05); the threshold value for selection of number of informative singular values in SMAI-alignment. Effective only when denoise="scree."}
+\item{cutoff}{numeric larger than 1 (default 1.001); the threshold value for selection of number of informative singular values in SMAI-alignment. Effective only when denoise="scree."}
 
 \item{cutoff.t}{numeric larger than 1 (default 1.5); the threshold value for data-driven selection of number of informative singular values in SMAI-test.}
 }

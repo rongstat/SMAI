@@ -7,16 +7,16 @@
 #' @param data2 data matrix (pxn2).
 #' @param sel1 index set to select a subset of data1 for SMAI-align
 #' @param sel2 index set to select a subset of data2 for SMAI-align
-#' @param r.max intetger (default 50); the maximum number of singular values selected for desnoising and SMAI-alignment.
+#' @param r.max intetger (default 200); the maximum number of singular values selected for desnoising and SMAI-alignment.
 #' @param t integer (default 5); maximum number of iterations for SMAI-align.
 #' @param denoise whether data should be denoised before searching for the spectral alignment; "scree" uses scree plot to denoise; "screeNOT" uses the ScreeNOT package to denoise; "none" does not perform denoising to the data.
 #' @param test logical (default TRUE); whether SMAI-test is included in the workflow.
 #' @param dir.map directionality of alignment; can be data1 aligned to data2 ("1to2"), data2 aligned to data1 ("2to1"), or internally determined acording to alignment error ("auto").
 #' @param outlier.cut integer (default 20); the number of outliers to be removed from the reference data at each iteration.
-#' @param knn integer (default 50); the number of nearest neighbors to be sampled from to do SMAI-test. A smaller value leads to more stringent selection of the test set.
-#' @param prop.align numeric between 0 and 1 (default 0.5; and must not exceed 0.5 if test=TRUE, to ensure); proportion of samples used for SMAI-alignment. Smaller value improves speed with a possible cost of precision.
+#' @param knn integer (default 30); the number of nearest neighbors to be sampled from to do SMAI-test. A smaller value leads to more stringent selection of the test set.
+#' @param prop.align numeric between 0 and 1 (default 0.3; and must not exceed 0.5 if test=TRUE, to ensure); proportion of samples used for SMAI-alignment. Smaller value improves speed with a possible cost of precision.
 #' @param prop.inf numeric between 0 and 1-prop.align (default 0.5); proportion of samples used for SMAI-test. Smaller value improves speed with a possible cost of precision.
-#' @param cutoff numeric larger than 1 (default 1.05); the threshold value for selection of number of informative singular values in SMAI-alignment. Effective only when denoise="scree."
+#' @param cutoff numeric larger than 1 (default 1.001); the threshold value for selection of number of informative singular values in SMAI-alignment. Effective only when denoise="scree."
 #' @param cutoff.t numeric larger than 1 (default 1.5); the threshold value for data-driven selection of number of informative singular values in SMAI-test.
 #' @return data1.integrate: integrated data matrices (pxn1);
 #' @return data2.integrate: integrated data matrices (pxn2);
@@ -410,9 +410,9 @@ align<-function(data1, data2, sel1=NULL, sel2=NULL, r.max=200, t=5, test=TRUE, d
 }
 
 
-#' Batch evaluation metrics
+#' Batch correction evaluation metrics
 #'
-#' This function include a few metrics for evaluating batch effect removal.
+#' This function include a few metrics for evaluating the batch effect removal.
 #'
 #' @param data integrated data matrix (pxn).
 #' @param meta_data label information.
@@ -461,7 +461,7 @@ assess <- function(data, meta_data, straggler=NULL, cutoff=1.05){
 
 #' Structure-preserving metrics
 #'
-#' This function include a few metrics for evaluating structure preservation after integration.
+#' This function include three metrics for evaluating structure preservation after integration.
 #'
 #' @param data.registered integrated data matrix (nxp).
 #' @param data original data matrix (nxp).
