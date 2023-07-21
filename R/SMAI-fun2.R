@@ -1,7 +1,7 @@
 
 #' Spectral Manifold Alignment and Inference (SMAI)
 #'
-#' This function simultaneously
+#' This function enables principled and interpretable alignability testing and structure-preserving integration of single-cell data.
 #'
 #' @param data1 data matrix (pxn1).
 #' @param data2 data matrix (pxn2).
@@ -412,7 +412,7 @@ align<-function(data1, data2, sel1=NULL, sel2=NULL, r.max=200, t=5, test=TRUE, d
 
 #' Batch evaluation metrics
 #'
-#' This function include a few
+#' This function include a few metrics for evaluating batch effect removal.
 #'
 #' @param data integrated data matrix (pxn).
 #' @param meta_data label information.
@@ -461,7 +461,7 @@ assess <- function(data, meta_data, straggler=NULL, cutoff=1.05){
 
 #' Structure-preserving metrics
 #'
-#' This function include a few
+#' This function include a few metrics for evaluating structure preservation after integration.
 #'
 #' @param data.registered integrated data matrix (nxp).
 #' @param data original data matrix (nxp).
