@@ -12,7 +12,6 @@ The directory `Data` contains several example datasets for demonstrating our met
 
 The directory `Analysis - R Codes` includes R scripts for analyzing the example datasets, and for reproducing the numerical results in the manuscript.
 
-The directory `Python Code` includes Python implementation of the method.
 
 # System Requirements
 
@@ -36,6 +35,8 @@ To install the R package 'SMAI', simply type the following codes in R:
 `install_github("rongstat/SMAI")`
 
 For a **quick guide to meta-visualization in R**, please check out https://rongstat.github.io/SMAI_guide.io/SMAI-tutorial.html.
+
+For Scanpy (Python) users, we recommend converting your AnnData h5ad objects into Seurat objects (e.g. by using [sceasy](https://github.com/cellgeni/sceasy)) and then either running SMAI natively in R or calling the `subprocess` module from within Python to launch SMAI analysis through R.
 
 For further questions and inquiries, please contact Rong Ma (rongm@stanford.edu).
 
