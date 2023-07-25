@@ -34,7 +34,7 @@ To install the R package 'SMAI', simply type the following codes in R:
 
 `install_github("rongstat/SMAI")`
 
-For a **quick guide to meta-visualization in R**, please check out https://rongstat.github.io/SMAI_guide.io/SMAI-tutorial.html.
+For a **quick guide to SMAI in R**, please check out https://rongstat.github.io/SMAI_guide.io/SMAI-tutorial.html.
 
 For Scanpy (Python) users, we recommend converting your AnnData h5ad objects into Seurat objects (e.g. by using [sceasy](https://github.com/cellgeni/sceasy)) and then either running SMAI natively in R or calling the `subprocess` module from within Python to launch SMAI analysis through R.
 
