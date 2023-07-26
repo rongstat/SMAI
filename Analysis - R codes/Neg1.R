@@ -122,7 +122,7 @@ data.X2.smai = data.X2.smai[match(features,rownames(data.X2.smai)),]
 mnn.out = findMutualNN(t(data1),t(data2), k1=50)
 prop.align.par = min(c(length(unique(mnn.out$first))/dim(data1)[2],
                        length(unique(mnn.out$second))/dim(data2)[2]))
-prop.align.par#[1]0.3828616 <- something larger than 0.4 recommended.
+prop.align.par#[1]0.4237421 <- something larger than 0.4 recommended.
 
 #start SMAI
 set.seed(5)
@@ -132,7 +132,7 @@ out.smai <- align(data.X1.smai, data.X2.smai, dir.map = "auto", denoise="scree",
                   prop.align = 0.3)
 
 out.smai$p.value
-#[1] 0.000691
+#[1] 5.989744e-06
 
 meta_data=data.frame(cell_type = factor(c(ct.X1,ct.X2)),
                      batch = factor(c(rep("X1",length(ct.X1)), rep("X2",length(ct.X2)))))

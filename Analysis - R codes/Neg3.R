@@ -28,6 +28,8 @@ ct0.X1 = ct.X1
 ct0.X2 = ct.X2
 
 n.size = c(4000, 8000)
+i=1
+f.out=list()
 
 set.seed(10)
 sel.id = sample(11981,n.size[i])
