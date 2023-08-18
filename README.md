@@ -4,7 +4,7 @@
 
 The method is based on the paper:
 
-Ma, R., Sun, E., Donoho, D., and Zou, J. (2023) *Is your data alignable? Principled and interpretable alignability testing and integration of single-cell data.*
+Ma, R., Sun, E., Donoho, D., and Zou, J. (2023) *Is your data alignable? Principled and interpretable alignability testing and integration of single-cell data.* https://arxiv.org/pdf/2308.01839.pdf.
 
 # Content
 
