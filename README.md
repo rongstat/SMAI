@@ -38,5 +38,5 @@ For a **quick guide to SMAI in R**, please check out https://rongstat.github.io/
 
 For Scanpy (Python) users, we recommend converting your AnnData h5ad objects into Seurat objects (e.g. by using [sceasy](https://github.com/cellgeni/sceasy)) and then either running SMAI natively in R or calling the `subprocess` module from within Python to launch SMAI analysis through R.
 
-For further questions and inquiries, please contact Rong Ma (rongm@stanford.edu).
+For further questions and inquiries, please contact Rong Ma (rongma@hsph.harvard.edu).
 
