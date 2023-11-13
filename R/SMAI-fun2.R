@@ -29,7 +29,8 @@ align<-function(data1, data2, sel1=NULL, sel2=NULL, r.max=200, t=5, test=TRUE, d
                 denoise = c("scree","screeNOT","none"), outlier.cut=20, knn=30,
                 prop.align=0.3, prop.inf = 0.5, cutoff = 1.001, cutoff.t = 1.5){
 
-
+  if(prop.align+prop.inf>1){ print("Error: prop.align + prop.inf > 1!") }else{
+    
   n1 = dim(data1)[2]
   n2 = dim(data2)[2]
 
@@ -405,7 +406,7 @@ align<-function(data1, data2, sel1=NULL, sel2=NULL, r.max=200, t=5, test=TRUE, d
                 p.value=p.value))
   }
 
-
+}
 
 }
 
