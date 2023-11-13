@@ -237,7 +237,7 @@ align<-function(data1, data2, sel1=NULL, sel2=NULL, r.max=200, t=5, test=TRUE, d
 
   print("Spectral alignment done!")
 
-
+  print("Begin SMAI-test...")
   ##############################
   #######  SMAI-test
   ##############################
