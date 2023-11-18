@@ -29,7 +29,7 @@ align<-function(data1, data2, sel1=NULL, sel2=NULL, r.max=200, t=5, test=TRUE, d
                 denoise = c("scree","screeNOT","none"), outlier.cut=20, knn=30,
                 prop.align=0.3, prop.inf = 0.5, cutoff = 1.001, cutoff.t = 1.5){
   
-  if(r.max>max(c(dim(data1), dim(data2)))){r.max = min(c(dim(data1), dim(data2)))}
+  if(r.max>min(c(dim(data1), dim(data2)))){r.max = min(c(dim(data1), dim(data2)))}
 
   if(prop.align+prop.inf>1){ print("Error: prop.align + prop.inf > 1!") }else{
     
