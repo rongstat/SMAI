@@ -4,7 +4,7 @@
 
 The method is based on the paper:
 
-Ma, R., Sun, E., Donoho, D., and Zou, J. (2023) *Is your data alignable? Principled and interpretable alignability testing and integration of single-cell data.*
+Ma, R., Sun, E., Donoho, D., and Zou, J. (2023) *Is your data alignable? Principled and interpretable alignability testing and integration of single-cell data.* https://arxiv.org/pdf/2308.01839.pdf.
 
 # Content
 
@@ -20,7 +20,7 @@ The meta-visualization package requires only a standard computer with enough RAM
 RAM: 16+ GB
 CPU: 4+ cores, 3.3+ GHz/core
 
-The R implementation of the method is tested under R version 4.1.1, and require the R packages: `Rfast`,`RSpectra`,`ScreeNOT`,`clusterSim`,`fpc`,`cluster`,`Seurat`,`uwot`,`fossil`,`batchelor`,`SMAI`.
+The R implementation of the method is tested under R version 4.1.1, and require the R packages: Rfast(v2.1.0), RSpectra(v0.16-1), ScreeNOT(v0.1.0), clusterSim(v0.51-3), fpc(v2.2-10), cluster(v2.1.4), Seurat(v5.0.0), uwot(v0.1.16), fossil(v0.4.0), batchelor(v1.18.0), SMAI(v0.1.0).
 
 
 # Get Started
@@ -38,5 +38,5 @@ For a **quick guide to SMAI in R**, please check out https://rongstat.github.io/
 
 For Scanpy (Python) users, we recommend converting your AnnData h5ad objects into Seurat objects (e.g. by using [sceasy](https://github.com/cellgeni/sceasy)) and then either running SMAI natively in R or calling the `subprocess` module from within Python to launch SMAI analysis through R.
 
-For further questions and inquiries, please contact Rong Ma (rongm@stanford.edu).
+For further questions and inquiries, please contact Rong Ma (rongma@hsph.harvard.edu).
 
