@@ -239,7 +239,7 @@ align<-function(data1, data2, sel1=NULL, sel2=NULL, r.max=200, t=5, test=TRUE, d
 
   print("Spectral alignment done!")
 
-  print("Begin SMAI-test...")
+  
   ##############################
   #######  SMAI-test
   ##############################
@@ -327,6 +327,7 @@ align<-function(data1, data2, sel1=NULL, sel2=NULL, r.max=200, t=5, test=TRUE, d
   ####start SMAI-test
 
   if(test==TRUE){
+    print("Begin SMAI-test...")
     id1.inf = sample(setdiff(1:n1, id1.align), n1*prop.inf)
     id2.inf = sample(setdiff(1:n2, id2.align), n2*prop.inf)
     data1.inf = data1.d[,id1.inf]
