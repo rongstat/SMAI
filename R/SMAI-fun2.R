@@ -471,10 +471,15 @@ assess <- function(data, meta_data, straggler=NULL, cutoff=1.05){
 #' @param data original data matrix (nxp).
 #' @return Kendall's tau ("kendall"), Spearman's rho ("spearman"), and Pearson ("pearson").
 #' @export
-faithful <- function(data.registered, data){
+faithful <- function(data.registered, data, n.sample=1000){
 
   n=dim(data)[1]
-  sub.id = sample(n,min(c(1000,n)))
+  
+  if(n.sample>n){
+    sub.id=1:n
+  }else{
+    sub.id = sample(n,min(c(n.sample,n)))
+  }
 
   dist.reg = as.matrix(dist((data.registered[sub.id,])))
   dist.ori = as.matrix(dist((data[sub.id,])))
