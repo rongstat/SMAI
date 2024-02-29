@@ -4,7 +4,7 @@
 
 The method is based on the paper:
 
-Ma, R., Sun, E., Donoho, D., and Zou, J. (2024) *Principled and interpretable alignability testing and integration of single-cell data.* **Proceedings of the National Academy of Science**, 121(10)e2313719121 https://doi.org/10.1073/pnas.2313719121. 
+Ma, R., Sun, E., Donoho, D., and Zou, J. (2024) *Principled and interpretable alignability testing and integration of single-cell data.* **Proceedings of the National Academy of Sciences**, 121(10)e2313719121 https://doi.org/10.1073/pnas.2313719121. 
 
 # Content
 
